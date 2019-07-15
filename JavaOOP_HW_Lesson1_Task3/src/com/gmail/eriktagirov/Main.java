@@ -11,6 +11,6 @@ public class Main {
 		System.out.println("Sum of vectors One and Two is vector Three with next coordinates: (" + resVector.getX() + "," + resVector.getY() + "," + resVector.getZ() + ")");
 		
 		resVector.scalarMultiplication(vectorOne, vectorOne);
-		System.out.println("Scalar multiplication of vectors One and Two is: " + resVector.getMult());
+		System.out.println("Scalar multiplication of vectors One and Two is: " + resVector.scalarMultiplication(vectorOne, vectorTwo));
 	}
 }

@@ -4,7 +4,6 @@ public class Vector3d {
 	private double x;
 	private double y;
 	private double z;
-	private double mult;
 	
 	public Vector3d() {
 		
@@ -25,8 +24,9 @@ public class Vector3d {
 		return summOfVectors;
 	}
 	
-	public void scalarMultiplication(Vector3d a, Vector3d b) {
-		mult =  (a.x * b.x) + (a.y * b.y) + (a.z * b.z);
+	public double scalarMultiplication(Vector3d a, Vector3d b) {
+		double mult =  (a.x * b.x) + (a.y * b.y) + (a.z * b.z);
+		return mult;
 	}
 
 	public double getX() {
@@ -51,11 +51,6 @@ public class Vector3d {
 
 	public void setZ(double z) {
 		this.z = z;
-	}
-
-	
-	public double getMult() {
-		return mult;
 	}
 
 	@Override
