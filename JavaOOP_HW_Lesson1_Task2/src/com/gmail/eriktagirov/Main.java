@@ -14,10 +14,10 @@ public class Main {
 		Triangle[] triangles = {trglOne, trglTwo, trglThree};
 		
 		for (int i = 0; i < triangles.length; i++) {
-			if (Double.isNaN(triangles[i].getArea())) {
+			if (Double.isNaN(triangles[i].calculateArea())) {
 				System.out.println("Triangle does not exist!");
 			} else {
-				System.out.println(triangles[i].getArea());
+				System.out.println(triangles[i].calculateArea());
 			}
 		}
 	}

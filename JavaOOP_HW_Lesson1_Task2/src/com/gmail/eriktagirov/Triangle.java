@@ -4,7 +4,6 @@ public class Triangle {
 	private double sideA;
 	private double sideB;
 	private double sideC;
-	private double area;
 	
 	public Triangle() {
 		
@@ -17,9 +16,10 @@ public class Triangle {
 		this.sideC = sideC;
 	}
 	
-	public void calculateArea() {
+	public double calculateArea() {
 		double p = (sideA + sideB + sideC) / 2;
-		area = Math.sqrt(p * (p - sideA) * (p - sideB) * (p - sideC));
+		double area = Math.sqrt(p * (p - sideA) * (p - sideB) * (p - sideC));
+		return area;
 	}
 
 	public double getSideA() {
@@ -46,13 +46,9 @@ public class Triangle {
 		this.sideC = sideC;
 	}
 
-	public double getArea() {
-		return area;
-	}
-
 	@Override
 	public String toString() {
-		return "Triangle [sideA=" + sideA + ", sideB=" + sideB + ", sideC=" + sideC + ", area=" + area + "]";
+		return "Triangle [sideA=" + sideA + ", sideB=" + sideB + ", sideC=" + sideC + "]";
 	}
 	
 }
